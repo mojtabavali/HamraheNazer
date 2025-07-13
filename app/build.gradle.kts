@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.kotlin.kapt)
+    alias(libs.plugins.kotlin.dagger)
 }
 
 android {
@@ -56,4 +58,17 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation(libs.play.services)
+    implementation(libs.play.services.location)
+    implementation(libs.app.compat)
+    implementation(libs.constraint.layout)
+    implementation(libs.material.ui)
+    implementation(libs.dagger.hilt)
+    kapt(libs.dagger.compiler)
+    kapt(libs.dagger.android)
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.androidx.lifecycle.lifecycle.viewmodel)
+    implementation(libs.androidx.fragment)
+    implementation(libs.google.gms)
 }
