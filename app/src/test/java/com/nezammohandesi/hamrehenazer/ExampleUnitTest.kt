@@ -1,4 +1,4 @@
-package com.example.hamrehenazer
+package com.nezammohandesi.hamrehenazer
 
 import org.junit.Test
 

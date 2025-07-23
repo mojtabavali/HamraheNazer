@@ -14,13 +14,15 @@ appCompat="1.7.0"
 constraintLayout="2.1.4"
 materialUi="1.12.0"
 retrofit="2.11.0"
-dagger="2.48"
+dagger="2.56.2"
 daggerAndroid="1.0.0-alpha03"
 kotlin-kapt = "1.9.0"
 lifecycleViewModels = "2.8.4"
 fragmentKtx = "1.8.8"
 mapUtil="2.3.0"
-
+roomVer="2.7.2"
+gsonVer="2.13.1"
+meansVer="0.41.0"
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -43,15 +45,20 @@ material-ui={group="com.google.android.material",name="material",version.ref="ma
 retrofit={group="com.squareup.retrofit2",name="retrofit",version.ref="retrofit"}
 converter-gson={group="com.squareup.retrofit2",name="converter-gson",version.ref="retrofit"}
 dagger-hilt={group="com.google.dagger",name="hilt-android",version.ref="dagger"}
-dagger-compiler={group="com.google.dagger",name="hilt-android-compiler",version.ref="dagger"}
+dagger-compiler={group="com.google.dagger",name="hilt-compiler",version.ref="dagger"}
 dagger-android={group="androidx.hilt",name="hilt-lifecycle-viewmodel",version.ref="daggerAndroid"}
 constraint-layout={group="androidx.constraintlayout",name="constraintlayout",version.ref="constraintLayout"}
 androidx-lifecycle-lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewModels" }
 androidx-fragment = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragmentKtx" }
 google-gms={group="com.google.maps.android",name="android-maps-utils",version.ref="mapUtil"}
+androidx-room-runtime={group="androidx.room",name="room-runtime",version.ref="roomVer"}
+androidx-room-compiler={group="androidx.room",name="room-compiler",version.ref="roomVer"}
+androidx-room-ktx={group="androidx.room",name="room-ktx",version.ref="roomVer"}
+google-gson={group="com.google.code.gson",name="gson",version.ref="gsonVer"}
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlin-dagger = { id = "com.google.dagger.hilt.android",  version.ref = "dagger" }
 kotlin-kapt = { id = "org.jetbrains.kotlin.kapt",  version.ref = "kotlin-kapt" }
+kotlin-means = { id = "com.github.ben-manes.versions",  version.ref = "meansVer" }

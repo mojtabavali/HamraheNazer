@@ -1,4 +1,4 @@
-package com.example.hamrehenazer.ui.theme
+package com.nezammohandesi.hamrehenazer.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

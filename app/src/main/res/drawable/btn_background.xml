@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#00CFFF" /> <!-- رنگ آبی که میخوای -->
+    <corners android:radius="50dp" /> <!-- انحنای گوشه‌ها -->
+</shape>

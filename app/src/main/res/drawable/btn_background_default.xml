@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/white" /> <!-- رنگ سفید برای حالت پیش‌فرض -->
+    <corners android:radius="24dp" /> <!-- انحنای گوشه‌ها -->
+    <stroke
+        android:color="#D3D3D3"
+    android:width="2dp" />
+</shape>

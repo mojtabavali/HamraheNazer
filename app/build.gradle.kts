@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.hamrehenazer"
+    namespace = "com.nezammohandesi.hamrehenazer"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.hamrehenazer"
+        applicationId = "com.nezammohandesi.hamrehenazer"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -38,7 +38,10 @@ android {
     }
     buildFeatures {
         compose = true
+        viewBinding=true
+
     }
+
 }
 
 dependencies {
@@ -70,5 +73,9 @@ dependencies {
     implementation(libs.converter.gson)
     implementation(libs.androidx.lifecycle.lifecycle.viewmodel)
     implementation(libs.androidx.fragment)
+    implementation(libs.google.gms)
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.room.ktx)
+    annotationProcessor (libs.androidx.room.compiler)
     implementation(libs.google.gms)
 }

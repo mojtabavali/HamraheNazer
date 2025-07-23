@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2E2E3A">
+
+    <!-- محتوای سمت چپ -->
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@id/customMenu"
+        android:background="#2E2E3A" />
+
+    <!-- منوی سمت راست -->
+    <LinearLayout
+        android:id="@+id/customMenu"
+        android:layout_width="72dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        android:background="@drawable/bg_input">
+
+        <!-- فاصله بالا -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- دکمه اول -->
+        <ImageButton
+            android:id="@+id/btn1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_background_default"
+            android:src="@drawable/profile" />
+
+        <!-- فاصله وسط -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- دکمه دوم -->
+        <ImageButton
+            android:id="@+id/btn2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_background_default"
+            android:src="@drawable/current" />
+
+        <!-- فاصله وسط -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- دکمه سوم -->
+        <ImageButton
+            android:id="@+id/btn3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_background_default"
+            android:src="@drawable/archive" />
+
+        <!-- فاصله پایین -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>
